@@ -1,9 +1,11 @@
 build:
 	@echo "Building container... 🪀"
+	sudo docker build -t rl_app .
 	@echo "Done 🪀"
 
 run:
 	@echo "Running container... 🪀"
+	sudo docker run -p 8000:8000 -it rl_app
 	@echo "Done 🪀"
 
 install:
